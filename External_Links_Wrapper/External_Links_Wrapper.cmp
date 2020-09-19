@@ -1,0 +1,11 @@
+<!--
+ - Created by gerry on 9/18/2020.
+ -->
+
+<aura:component implements="force:appHostable, flexipage:availableForAllPageTypes, lightning:isUrlAddressable" access="global" description="External_Links_Wrapper">
+
+	<lightning:workspaceAPI aura:id="workspace"/>
+
+	<c:external_links_component onopennewsubtab="{!c.openConsoleTab}"/>
+
+</aura:component>

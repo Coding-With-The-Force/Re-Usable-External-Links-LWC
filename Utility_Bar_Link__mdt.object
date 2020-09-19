@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Active_Link__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Determines whether or not a link is added to the link utility.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Would you like your link to should up in the external links box yet?</inlineHelpText>
+        <label>Active Link</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Link_URL__c</fullName>
+        <description>The URL of the link</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Enter the URL link here</inlineHelpText>
+        <label>Link URL</label>
+        <required>true</required>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Open_in_console_tab__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This allows the link to open in a tab in the console.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Do you want the tab to open in the console?</inlineHelpText>
+        <label>Open in console tab</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Order__c</fullName>
+        <description>The order in which the links appear.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>What order would you like your link to appear in?</inlineHelpText>
+        <label>Order</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Utility Bar Link</label>
+    <pluralLabel>Utility Bar Links</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

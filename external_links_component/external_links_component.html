@@ -1,0 +1,13 @@
+<!--
+ - Created by gerry on 9/18/2020.
+ -->
+
+<!-- External Links Component -->
+<template>
+	<template if:true={linkList}>
+		<template for:each={linkList} for:item="link">
+			<input key={link.Id} data-id={link.Id} class="slds-button slds-button_neutral linkButton" value={link.MasterLabel}
+				   data-url={link.gAuto__Link_URL__c} data-opentab={link.gAuto__Open_in_console_tab__c} type="button" onclick={openLink}/>
+		</template>
+	</template>
+</template>

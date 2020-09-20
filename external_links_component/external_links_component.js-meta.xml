@@ -4,7 +4,4 @@
     <description>External Links Component</description>
     <isExposed>true</isExposed>
     <masterLabel>External Links Component</masterLabel>
-    <targets>
-        <target>lightning__UtilityBar</target>
-    </targets>
 </LightningComponentBundle>

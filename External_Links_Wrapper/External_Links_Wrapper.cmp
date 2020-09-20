@@ -2,10 +2,15 @@
  - Created by gerry on 9/18/2020.
  -->
 
+<!--
+ - Aura Component code. This is needed because LWC's do not currently have the ability to open Salesforce console tabs.
+ -->
+
 <aura:component implements="force:appHostable, flexipage:availableForAllPageTypes, lightning:isUrlAddressable" access="global" description="External_Links_Wrapper">
 
 	<lightning:workspaceAPI aura:id="workspace"/>
 
+	<!--Adding our LWC and handling our custom event we declared in it (opennewsubtab)-->
 	<c:external_links_component onopennewsubtab="{!c.openConsoleTab}"/>
 
 </aura:component>
